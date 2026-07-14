@@ -37,7 +37,7 @@ Projet-Meteo
 ├── js
 │   └── app.js
 ├── images
-│   └── weather-bg.jpg
+│   └── image.jpg.jpg
 └── README.md
 ```
 
