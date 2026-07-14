@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="logo">
+                <i class="fa-solid fa-cloud-sun"></i>
+                Tableau de Bord Météo
+            </div>
+
+            <ul>
+                <li class="active">Tableau de bord</li>
+                <li>Prévisions</li>
+                <li>Carte</li>
+                <li>Alertes</li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="search-container">
+
+            <form id="weatherForm">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Entrez une ville"
+                    aria-describedby="errorMessage">
+
+                <button type="submit">
+                    Rechercher
+                </button>
+
+            </form>
+
+            <p id="errorMessage"></p>
+
+        </section>
+
+        <div id="loader" class="loader hidden">
+            Chargement...
+        </div>
+
+        <div id="apiMessage"></div>
+
+        <section id="weatherCard" class="weather-card hidden">
+
+            <h2 id="cityName"></h2>
+
+            <p class="subtitle">
+                météo actuelle
+            </p>
+
+            <div id="weatherIcon" class="weather-icon">
+                ☀️
+            </div>
+
+            <h1 id="temperature"></h1>
+
+            <hr>
+
+            <div class="details">
+
+                <div>
+
+                    <i class="fa-solid fa-cloud-sun"></i>
+
+                    <h3 id="weatherStatus"></h3>
+
+                    <p>Condition</p>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-wind"></i>
+
+                    <h3 id="windSpeed"></h3>
+
+                    <p>vitesse du vent</p>
+
+                </div>
+
+            </div>
+
+            <p class="update-time">
+                Updated just now
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        LOG3500 - Applications Web Asynchrones & API
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

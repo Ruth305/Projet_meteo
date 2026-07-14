@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:url("../images/images.jpg.jpg");
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+}
+
+header{
+    background:white;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#2f80ed;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.active{
+    color:#2f80ed;
+    border-bottom:3px solid #2f80ed;
+}
+
+.search-container{
+    text-align:center;
+    margin-top:30px;
+}
+
+form{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+input{
+    padding:12px;
+    width:300px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    background:#2f80ed;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.weather-card{
+    max-width:800px;
+    margin:40px auto;
+    background:rgba(255,255,255,.95);
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.weather-card h2{
+    font-size:2.5rem;
+}
+
+.subtitle{
+    color:gray;
+    margin-top:10px;
+}
+
+.weather-icon{
+    font-size:6rem;
+    margin:20px 0;
+}
+
+#temperature{
+    font-size:7rem;
+    color:#001b44;
+}
+
+.details{
+    display:flex;
+    justify-content:space-around;
+    margin-top:25px;
+}
+
+.details div{
+    text-align:center;
+}
+
+.details i{
+    font-size:2rem;
+    color:#2f80ed;
+    margin-bottom:10px;
+}
+
+.update-time{
+    margin-top:30px;
+    color:gray;
+}
+
+.loader{
+    text-align:center;
+    font-size:1.2rem;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+.hidden{
+    display:none;
+}
+
+#errorMessage{
+    color:red;
+    margin-top:10px;
+}
+
+#apiMessage{
+    color:red;
+    text-align:center;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+input[aria-invalid="true"]{
+    border:2px solid red;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    form{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    input{
+        width:90%;
+    }
+
+    .details{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    #temperature{
+        font-size:4rem;
+    }
+
+    .weather-card{
+        width:95%;
+    }
+}
