@@ -12,10 +12,10 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
+            <h1 class="logo">
                 <i class="fa-solid fa-cloud-sun"></i>
                 Tableau de Bord Météo
-            </div>
+        </h1>
             <ul>
                 <li class="active">Tableau de bord</li>
                 <li>Prévisions</li>
@@ -52,50 +52,44 @@
 
         <section id="weatherCard" class="weather-card hidden">
 
-            <h2 id="cityName"></h2>
+    <h2 id="cityName">Ville</h2>
 
-            <p class="subtitle">
-                météo actuelle
-            </p>
+    <p class="subtitle">
+        météo actuelle
+    </p>
 
-            <div id="weatherIcon" class="weather-icon">
-                ☀️
-            </div>
+    <div id="weatherIcon" class="weather-icon">
+        ☀️
+    </div>
 
-            <h1 id="temperature"></h1>
+    <h2 id="temperature">-- °C</h2>
 
-            <hr>
+    <hr>
 
-            <div class="details">
+    <div class="details">
+    </div>
 
-                <div>
+        <div>
+            <i class="fa-solid fa-cloud-sun"></i>
 
-                    <i class="fa-solid fa-cloud-sun"></i>
+            <h2 id="weatherStatus">
+                Condition inconnue
+            </h2>
+            <p>Condition</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-wind"></i>
 
-                    <h3 id="weatherStatus"></h3>
-
-                    <p>Condition</p>
-
-                </div>
-
-                <div>
-
-                    <i class="fa-solid fa-wind"></i>
-
-                    <h3 id="windSpeed"></h3>
-
-                    <p>vitesse du vent</p>
-
-                </div>
-
-            </div>
-
-            <p class="update-time">
+            <h2 id="windSpeed">
+                -- km/h
+            </h2>
+            <p>Vitesse du vent</p>
+ <p class="update-time">
                 Mis à jour à l'instant
             </p>
+        </div>
 
-        </section>
-
+</section>  
     </main>
 
     <footer>
